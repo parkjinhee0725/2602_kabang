@@ -14,8 +14,9 @@
 <body>
   <body>
     <div class="main_banner con-min-width">
-        <div class="bg"></div>
-		<div class="con text_box">
+        <div class="bg"></div> 
+		<div class="con relative">
+			<div class="con text_box">
             <h3>이미 모두의 은행<br>지금은 카카오뱅크</h3>
 
             <p>
@@ -45,7 +46,8 @@
 				</li>
             </ul>
         </div>
-        </div>  
+		</div>
+		
         <div class="con img-box banner_img">
            <img src="../imgs/imgi_21_main-bg3.png" alt="banner">
                </div>  
@@ -167,7 +169,7 @@
 			width: 1200px;
 		}
 
-        .main_banner .bg {
+        .main_banner > .bg {
             position: absolute;
             top: 0;
             left: 0;
@@ -178,34 +180,34 @@
         }
 
 	/* 텍스트 시작 */
-	     .main_banner > .text_box {
+	     .main_banner .text_box {
 			position: absolute;
 			top: 130px;
 			left: 20px;
 		 }
 
 
-        .main_banner > .text_box > h3 {
+        .main_banner .text_box > h3 {
             margin: 0;
             font-size: 49px;
             line-height: 1.4;
         }
 
-          .main_banner > .text_box > p{
+          .main_banner .text_box > p{
            font-size: 16px;
            line-height: 1.95;
            opacity: .7;
         }
 
-          .main_banner > .text_box > .btns{
+          .main_banner .text_box > .btns{
            margin-top: 50px; 
         }
 
-		 .main_banner > .text_box > .btns > li:first-child {
+		 .main_banner .text_box > .btns > li:first-child {
 				margin-right: 12px;
 			 }
 
-         .main_banner > .text_box > .btns > li >a {
+         .main_banner .text_box > .btns > li > a {
             display: block;
             width: 178px;
             height: 56px;
@@ -221,7 +223,7 @@
 			align-items: center;
             }
 
-			 .main_banner > .text_box > .btns .ico{
+			 .main_banner .text_box > .btns .ico{
 				width: 24px;
 				height: 24px;
 				display: block;
@@ -229,11 +231,11 @@
 				margin-right: 10px;
 			 }
 
-			  .main_banner > .text_box > .btns .ico-1{
+			  .main_banner .text_box > .btns .ico-1{
 				background-position: -341px -292px;
 			 }
 
-			 .main_banner > .text_box > .btns .ico-2{
+			 .main_banner .text_box > .btns .ico-2{
 				background-position: -371px -292px;
 			 }
 /* 텍스트 끝 */
