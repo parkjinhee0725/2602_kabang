@@ -4,46 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
     <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <!-- 제이쿼리 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-  <body>
     <section class="md_sec md_sec_1 con">
-        <div></div>
-        <div></div>
+        <div>
+            <div class="img-box">
+                <img src="../imgs/imgi_1_main-withdrawal.png" alt="중간섹션1">
+            </div>
+        </div>
+        <div>
+            <div class="txt_box">
+               <h3>
+					모바일로 더 손쉬운<br>계좌개설, 간편한 이체
+				</h3>
+				<p>
+					인증서, OTP 없이 계좌 개설이 간편합니다.
+					<br>
+					여러 건의 이체도 몇 번의 터치로 손쉽게 보낼 수 있습니다.
+				</p>
+				<div class="btn_box">
+					<a href="#">
+						카카오뱅크 입출금통장
+						<img src="../imgs/imgi_2_home_arr.png" alt="">
+					</a> 
+            </div>
+        </div>
+    </div>
     </section>
     <div class="md_divider"></div>
+
     <section class="md_sec md_sec_2 con">
         <div></div>
         <div></div>
     </section>
     <div class="md_divider"></div>
+
     <section class="md_sec md_sec_3 con">
         <div></div>
         <div></div>
     </section>
     <div class="md_divider"></div>
+
     <section class="md_sec md_sec_4 con">
         <div></div>
         <div></div>
     </section>
     <div class="md_divider"></div>
+
     <section class="md_sec md_sec_5 con">
         <div></div>
         <div></div>
     </section>
     <div class="md_divider"></div>
-
-
-
-
-        <style>
+     
+     <style>
 		/* 노말라이즈 */
 		body,
 		ul,
@@ -150,23 +171,77 @@
 			background-color: #ffe100;
 		}
 
-		/* ------------- 메인 배너 시작 ------------- */
-        .main_banner {
-            position: relative;
+		/* ------------- 중간 section 시작 ------------- */
+        /* 공통 섹션 시작 */
+        .md_sec {
+            min-height: 500px;
+            border: 10px solid black;
+            display: flex;
         }
 
-		.main_banner > .banner_img {
-			width: 1200px;
-		}
+        .md_sec > div:first-child{
+            background-color: pink;
+            width: 55%;
+        }
 
-        .main_banner > .bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 720px;
-            z-index: -1;
-            background-color: #ffef6b;
-}
+         .md_sec > div:last-child{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .md_divider{
+            height: 32px;
+            background-color: aquamarine;
+        }
+
+        /* 공통 섹션 끝 */
+
+        /* 섹션1 시작 */
+        .md_sec .img-box {
+            width: 473px;
+        }
+
+        .md_sec .txt_box > h3 {
+            font-size: 40px;
+            line-height: 1.25;
+            margin:0;
+        }
+
+         .md_sec .txt_box > p {
+            margin-top: 24px;
+            font-size: 15px;
+            line-height: 1.65;
+            color:#666;
+        }
+
+
+        .md_sec .txt_box > .btn_box {
+            margin-top: 30px;
+        }
+
+           .md_sec .txt_box > .btn_box > a {
+            width: 258px;
+            height: 56px;
+            font-size: 16px;
+            line-height: 56px;
+            color: #333;
+            background-color: #f6f6f6;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+         .md_sec .txt_box > .btn_box > a > img {
+            width: 6px;
+            height: 9px;
+            margin: 2px 0 0 8px;
+         }
+        /* 섹션1 끝 */
+        /* 중간 섹션 끝 */
+
+</style>
 </body>
 </html>
