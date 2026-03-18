@@ -469,7 +469,7 @@ background-position: -371px -292px;
 .md_sec .txt_box > .btn_box > a > img {
   width: 6px;
   height: 9px;
-  margin: 2px 0 0 8px;
+  margin: -1px 0 0 8px;
 }
 /* 공통 섹션 끝 */
 
@@ -806,7 +806,7 @@ background-position: -371px -292px;
 .loan_box .btn_wrap a img {
   width: 6px;
   height: 9px;
-  margin: 2px 0 0 8px;
+  margin: -1px 0 0 8px;
 }
 
 .loan_box .img-box {
@@ -864,7 +864,7 @@ background-position: -371px -292px;
 .checkcard_box .btn_box > a > img {
   width: 6px;
   height: 9px;
-  margin: 1px 0 0 8px;
+  margin: -2px 0 0 8px;
   display: block;
 }
 
